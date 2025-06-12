@@ -7,12 +7,12 @@ import { logger } from 'hono/logger'
 import { prettyJSON } from 'hono/pretty-json'
 import {OpenAPIHono} from '@hono/zod-openapi'
 import {auth} from './routes/auth'
-import {todos} from './routes/todos'
+import {todos} from './routes/todo'
 import {categories} from './routes/categories'
 import { errorHandler } from './middleware/error-handler'
 import {authMiddleware} from './middleware/auth'
 
-const app = new OpenAPIHono();
+export const app = new OpenAPIHono();
 
 //Middleware
 app.use('*', logger());

@@ -1,6 +1,6 @@
 import { Context } from 'hono';
 import {sign} from 'jsonwebtoken';
-import {hash, compare} from 'bcryptjs';
+import {hash, compare } from 'bcryptjs';
 import { BaseController } from "./base.controller";
 
 export class AuthController extends BaseController {

@@ -1,6 +1,8 @@
 {
   "name": "backend-todo-app",
   "type": "module",
+  "main": "dist/index.js",
+
   "scripts": {
     "build": "esbuild --bundle --outfile=./dist/index.js --platform=node --target=node20 ./src/index.ts",
     "zip": "zip -j lambda.zip dist/index.js",

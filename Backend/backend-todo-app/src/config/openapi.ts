@@ -1,5 +1,4 @@
 import { OpenAPIObject} from '@hono/zod-openapi';
-import { bearerAuth } from 'hono/bearer-auth';
 
 
 export const openApiConfig: OpenAPIObject ={
